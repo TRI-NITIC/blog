@@ -51,7 +51,7 @@ jobs:
         run: |
           git config --global user.email "github-actions@github.com"
           git config --global user.name "github-actions"
-          git remote set-url origin git@github.com:your-org/your-repo.git
+          git remote set-url origin git@github.com:TRI-NITIC/blog.git
           git push origin gh-pages
       - name: deploy
         uses: peaceiris/actions-gh-pages@v4
