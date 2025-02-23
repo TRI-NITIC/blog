@@ -31,6 +31,12 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
@@ -41,7 +47,13 @@ jobs:
           pip install pelican markdown
       - name: Build by Pelican
         run: make publish
-      - name: Deploy
+      - name: push
+        run: |
+          git config --global user.email "github-actions@github.com"
+          git config --global user.name "github-actions"
+          git remote set-url origin git@github.com:your-org/your-repo.git
+          git push origin gh-pages
+      - name: deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           # Upload entire repository
