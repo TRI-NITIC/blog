@@ -49,9 +49,7 @@ jobs:
         run: make publish
       - name: push
         run: |
-          git config --global user.email "github-actions@github.com"
-          git config --global user.name "github-actions"
-          git remote set-url origin git@github.com:TRI-NITIC/blog.git
+          git remote set-url origin https://github.com/TRI-NITIC/blog.git
           git push origin HEAD:gh-pages --force
       - name: deploy
         uses: peaceiris/actions-gh-pages@v4
