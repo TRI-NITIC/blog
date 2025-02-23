@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>TRI-Blog - テスト</title><link href="/" rel="alternate"></link><link href="/feeds/tesuto.atom.xml" rel="self"></link><id>/</id><updated>2019-02-24T00:00:00+09:00</updated><entry><title>タイトル</title><link href="/taitoru.html" rel="alternate"></link><published>2019-02-24T00:00:00+09:00</published><updated>2019-02-24T00:00:00+09:00</updated><author><name>SW</name></author><id>tag:None,2019-02-24:/taitoru.html</id><summary type="html">&lt;h3&gt;最初の投稿です。&lt;/h3&gt;
 &lt;p&gt;TRIは，一関高専&lt;strong&gt;総合技研部&lt;/strong&gt;のことです。&lt;/p&gt;
-&lt;p&gt;停車駅は，&lt;/p&gt;
+&lt;p&gt;総武快速線の停車駅は，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;稲毛&lt;/li&gt;
 &lt;li&gt;津田沼&lt;/li&gt;
@@ -9,11 +9,9 @@
 &lt;li&gt;市川&lt;/li&gt;
 &lt;li&gt;新小岩&lt;/li&gt;
 &lt;li&gt;錦糸町&lt;/li&gt;
-&lt;li&gt;馬喰町&lt;/li&gt;
-&lt;li&gt;新日本橋&lt;/li&gt;
-&lt;li&gt;東京 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h3&gt;最初の投稿です。&lt;/h3&gt;
+&lt;li&gt;馬喰町 …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h3&gt;最初の投稿です。&lt;/h3&gt;
 &lt;p&gt;TRIは，一関高専&lt;strong&gt;総合技研部&lt;/strong&gt;のことです。&lt;/p&gt;
-&lt;p&gt;停車駅は，&lt;/p&gt;
+&lt;p&gt;総武快速線の停車駅は，&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;稲毛&lt;/li&gt;
 &lt;li&gt;津田沼&lt;/li&gt;
@@ -43,6 +41,6 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;ペリカンを使ってみた.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;コードの書き方をテスト（多分使わない）&lt;/h3&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;hello world!&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content><category term="テスト"></category><category term="テスト"></category><category term="投稿"></category></entry></feed>
