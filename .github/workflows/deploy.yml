@@ -51,22 +51,15 @@ jobs:
         run: |
           git remote set-url origin https://github.com/TRI-NITIC/blog.git
           git push origin HEAD:gh-pages --force
-      - name: artifact
-        # uses: peaceiris/actions-gh-pages@v4
-        # with:
-          # Upload entire repository
-          # publish_dir: /output
-          # publish_branch: gh-pages
-      # - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            name: github-pages
-            path: ./output
-        
+      # - name: artifact
+      #   uses: actions/upload-pages-artifact@v3
+      #   with:
+      #       # github_token: ${{ secrets.GITHUB_TOKEN }}
+      #       name: github-pages
+      #       path: ./output
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+        uses: peaceiris/actions-gh-pages@v4
         with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            path: /output
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          publish_branch: gh-pages
