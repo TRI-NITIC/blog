@@ -1,6 +1,6 @@
 AUTHOR = 'TRI'
 SITENAME = 'TRI-Blog'
-SITEURL = "https://tri-nitic.github.io/blog"
+SITEURL = "/blog"
 
 PATH = "content"
 
