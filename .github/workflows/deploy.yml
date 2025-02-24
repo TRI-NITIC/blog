@@ -39,6 +39,11 @@ jobs:
         run:  |
           python3 -m pip install --upgrade pip
           pip install pelican markdown
+      - name: Debug
+        run : |
+          echo "debug"
+          env
+          df -h
       - name: Build by Pelican
         run: make publish
       - name: push
