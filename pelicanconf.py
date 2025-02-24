@@ -24,8 +24,8 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (
     ("X(Twitter)", "https://x.com/NITIC_Giken"),
-    ("Instagram", "https://www.python.org/"),
-    ("YouTube", "https://palletsprojects.com/p/jinja/")
+    ("Instagram", "https://www.instagram.com/nitic_giken/"),
+    ("YouTube", "https://youtube.com/channel/UCWzD5T_rBI4QKLPVGZo2Q8A?si=aSBOSZR3XGf4Xw8O")
 )
 
 # Social widget
