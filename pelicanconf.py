@@ -1,6 +1,8 @@
 AUTHOR = 'TRI'
 SITENAME = 'TRI-Blog'
-SITEURL = "/blog"
+SITEURL = ""
+
+SITESUBTITLE = '一関高専総合技研部 公式ブログ'
 
 PATH = "content"
 

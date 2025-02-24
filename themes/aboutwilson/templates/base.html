@@ -12,17 +12,67 @@
 		<![endif]-->
 	<link href="{{ SITEURL }}/theme/css/ipython.css" rel="stylesheet">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
 	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet">
 	<link href="{{ SITEURL }}/theme/css/local.css" rel="stylesheet">
-	<link href="{{ SITEURL }}/theme/css/pygments.css" rel="stylesheet">
+	<!-- <link href="{{ SITEURL }}/theme/css/pygments.css" rel="stylesheet"> -->
+	 <style>
+		a:hover {
+			text-decoration: none!important;
+		}
+		.hoverStyle:hover {
+			transition: 500ms;
+			background-color: #f2dede;
+		}
+		.tags {
+			color: gray;
+			border: 1px solid lightgray;
+			border-radius: 0.2em;
+			padding: 0.05em 0.1em;
+			text-align: center;
+		}
+		.articleTag .tags::before {
+			content: '# ';
+		}
+		.article-body p, .article-body li, .article-body table, .article-body pre {
+			margin-left: 3rem;
+		}
+		.article-body table {
+            border-collapse: collapse;
+			border: 3px solid black;
+		}
+        .article-body th, .article-body td {
+            border: 1px solid black;
+            padding: 0.5rem 1rem;
+            text-align: center;
+		}
+		.article-body th {
+			border-bottom: 2px solid black;
+			background-color: #aaaaaa;
+		}
+		.article-body h1, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6 {
+			border-left: solid 0.3em #ff5050;
+			margin-top: 1.5em;
+			padding-left: 0.3em;
+			font-weight: bold;
+		}
+		@media screen and (max-width: 520px) {
+			#subTitle {
+				display: none;
+			} 
+		}
+	 </style>
 	{% block head %}{% endblock %}
 </head>
 <body>
 <div class="container">
 	<div class="page-header">
-		<h1><a href="{{ SITEURL }}/">{{ SITENAME }}</a>
-			<br>{% if SITESUBTITLE %}<small>{{ SITESUBTITLE }}</small></h1>{% endif %}
+		<h1 style="font-weight:bold;">
+			<a href="{{ SITEURL }}/">{{ SITENAME }}</a>
+		{% if SITESUBTITLE %}
+			<small id="subTitle" style="font-size: 0.5em;">{{ SITESUBTITLE }}</small>
+		{% endif %}
+		</h1>
 	</div>
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
@@ -36,45 +86,20 @@
 		<div class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<div class="row">
-					<div class="col-md-3">
-						<h4>Navigation</h4>
-						<ul class="list-unstyled my-list-style">
-							<li><a href="{{SITEURL}}">{{ SITENAME }}</a></li>
-							{% for title, link in MENUITEMS %}
-							<li><a href="{{ SITEURL }}/{{ link }}"><i class="fa fa-{{ title }} "></i> {{title}}</a></li>
-							{% endfor %}
-							{% if DISPLAY_PAGES_ON_MENU %}
-							{% for page in pages %}
-							<li><a href="{{ SITEURL }}/{{ page.url }}"><i class="fa fa-{{ page.title }} "></i> {{page.title}}</a></li>
-							{% endfor %}
-							{% endif %}
-							{% if FEED_ALL_ATOM %}
-							<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" type="application/atom+xml"><i class="fa fa-rss "></i> atom</a></li>
-							{% endif %}
-							{% if FEED_ALL_RSS %}
-							<li><a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}" type="application/rss+xml"><i class="fa fa-rss "></i> rss</a></li>
-							{% endif %}
-						</ul>
+					<div class="col-md-4">
+						<h3 style="font-weight:bold;"><a href="{{ SITEURL }}/">{{ SITENAME }}</a>{% if SITESUBTITLE %}</h3>{% endif %}
 					</div>
-					<div class="col-md-3">
-						<h4>Author</h4>
-						<ul class="list-unstyled my-list-style">
-						{% for name, link in SOCIAL %}
-							<li><a href="{{ link }}">{{ name }}</a></li>
-						{% endfor %}
-						</ul>
-					</div>
-					<div class="col-md-3">
-						<h4>Categories</h4>
+					<div class="col-md-4">
+						<h4>カテゴリー</h4>
 						<ul class="list-unstyled my-list-style">
 							{% for cat, art in categories %}
-							<li><a href="{{SITEURL}}/category/{{cat | replace(" ", "-") | lower }}.html">{{cat}} ({{art | count}})</a></li>
+							<li><a href="{{SITEURL}}/{{cat.url | replace(" ", "-") | lower }}">{{cat}} ({{art | count}})</a></li>
 							{% endfor %}
 						</ul>
 					</div>
 				{% if LINKS %}
-					<div class="col-md-3">
-						<h4>Links</h4>
+					<div class="col-md-4">
+						<h4>関連リンク</h4>
 						<ul class="list-unstyled my-list-style">
 						{% for name, link in LINKS %}
 							<li><a href="{{ link }}">{{ name }}</a></li>
