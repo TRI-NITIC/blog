@@ -49,10 +49,8 @@ jobs:
         run: make publish
       - name: push
         run: |
-          git checkout gh-pages
-          git pull --rebase origin gh-pages
           git remote set-url origin https://github.com/TRI-NITIC/blog.git
-          git push origin gh-pages
+          git push origin HEAD:gh-pages --force
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
