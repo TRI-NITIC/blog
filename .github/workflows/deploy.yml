@@ -50,7 +50,7 @@ jobs:
       - name: push
         run: |
           git remote set-url origin https://github.com/TRI-NITIC/blog.git
-          git push origin HEAD:gh-pages --force
+          git push origin HEAD:gh-pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
