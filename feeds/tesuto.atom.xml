@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>TRI-Blog - テスト</title><link href="/blog/" rel="alternate"></link><link href="/blog/feeds/tesuto.atom.xml" rel="self"></link><id>/blog/</id><updated>2025-02-24T00:00:00+09:00</updated><subtitle>一関高専総合技研部 公式ブログ</subtitle><entry><title>最初の次の投稿</title><link href="/blog/zui-chu-noci-notou-gao.html" rel="alternate"></link><published>2025-02-24T00:00:00+09:00</published><updated>2025-02-24T00:00:00+09:00</updated><author><name>TRI</name></author><id>tag:None,2025-02-24:/blog/zui-chu-noci-notou-gao.html</id><content type="html">&lt;h2&gt;テストしたかっただけ&lt;/h2&gt;
+&lt;p&gt;日付がかぶっている場合のテストです。&lt;/p&gt;</content><category term="テスト"></category></entry></feed>
