@@ -21,6 +21,13 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+# Builded html file name
+
+SLUGIFY_SOURCE = 'basename'
+ARTICLE_URL = '{slug}.html'
+ARTICLE_SAVE_AS = '{slug}.html'
+
+
 # Blogroll
 LINKS = (
     ("X(Twitter)", "https://x.com/NITIC_Giken"),
