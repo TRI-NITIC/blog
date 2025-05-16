@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>投稿 — TRI-Blog</title>
+	<meta name="description" content="All posts which refer to tag 投稿">
+	<meta name="author" content="TRI">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="/blog/theme/html5.js"></script>
+		<![endif]-->
+	<link href="/blog/theme/css/ipython.css" rel="stylesheet">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/simplex/bootstrap.min.css" rel="stylesheet">
+	<link href="/blog/theme/css/local.css" rel="stylesheet">
+	<!-- <link href="/blog/theme/css/pygments.css" rel="stylesheet"> -->
+	 <style>
+		a:hover {
+			text-decoration: none!important;
+		}
+		.hoverStyle:hover {
+			transition: 500ms;
+			background-color: #f2dede;
+		}
+		.tags {
+			color: gray;
+			border: 1px solid lightgray;
+			border-radius: 0.2em;
+			padding: 0.05em 0.1em;
+			text-align: center;
+		}
+		.articleTag .tags::before {
+			content: '# ';
+		}
+		.article-body p, .article-body li, .article-body table, .article-body pre {
+			margin-left: 3rem;
+		}
+		.article-body table {
+            border-collapse: collapse;
+			border: 3px solid black;
+		}
+        .article-body th, .article-body td {
+            border: 1px solid black;
+            padding: 0.5rem 1rem;
+            text-align: center;
+		}
+		.article-body th {
+			border-bottom: 2px solid black;
+			background-color: #aaaaaa;
+		}
+		.article-body h1, .article-body h2, .article-body h3, .article-body h4, .article-body h5, .article-body h6 {
+			border-left: solid 0.3em #d9230f;
+			margin-top: 4rem;
+			margin-bottom: 2rem;
+			padding-left: 0.3em;
+			font-weight: bold;
+		}
+		@media screen and (max-width: 520px) {
+			#subTitle {
+				display: none;
+			} 
+		}
+		body {
+			font-weight: 400;
+			/* Bootstrapの初期化を回避 */
+		}
+	 </style>
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1 style="font-weight:bold;">
+			<a href="/blog/">TRI-Blog</a>
+			<small id="subTitle" style="font-size: 0.5em;">一関高専総合技研部 公式ブログ</small>
+		</h1>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+<h1>タグ <small>#&nbsp;投稿</small></h1>
+<table class="table">
+    <tbody>
+        <tr>
+        <td>2025-05-16</td>
+        <td><a href='/blog/2025-05-16.html'>「TGC teen ICHINOSEKI 2025」に参加します！</a></td>
+        </tr>
+        <tr>
+        <td>2025-02-28</td>
+        <td><a href='/blog/2025-02-28.html'>総合技研部の紹介</a></td>
+        </tr>
+    </tbody>
+</table>
+		</div>
+	</div> 	<!-- <hr> -->
+</div> <!-- /container -->
+<footer class="aw-footer bg-danger">
+	<div class="container"> <!-- footer -->
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="row">
+					<div class="col-md-4">
+						<h3 style="font-weight:bold;"><a href="/blog/">TRI-Blog</a></h3>					</div>
+					<div class="col-md-4">
+						<h4>カテゴリー</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="/blog/category/ibentogao-zhi.html">イベント告知 (1)</a></li>
+							<li><a href="/blog/category/shao-jie.html">紹介 (1)</a></li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h4>関連リンク</h4>
+						<ul class="list-unstyled my-list-style">
+							<li><a href="https://x.com/NITIC_Giken">X(Twitter)</a></li>
+							<li><a href="https://www.instagram.com/nitic_giken/">Instagram</a></li>
+							<li><a href="https://youtube.com/channel/UCWzD5T_rBI4QKLPVGZo2Q8A?si=aSBOSZR3XGf4Xw8O">YouTube</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center center-block aw-bottom">
+			<p>Copyright&copy; 2025 TRI All Rights Reserved.</p>
+			<p>Powered by Pelican</p>
+		</div>
+	</div>
+</div>
+<!-- JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$("div.collapseheader").click(function () {
+		$header = $(this).children("span").first();
+		$codearea = $(this).children(".input_area");
+		$codearea.slideToggle(500, function () {
+			$header.text(function () {
+				return $codearea.is(":visible") ? "Collapse Code" : "Expand Code";
+			});
+		});
+	});
+});
+</script>
+</body>
+</html>
